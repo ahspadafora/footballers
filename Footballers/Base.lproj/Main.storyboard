@@ -29,17 +29,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ndv-kY-aLf">
-                                            <rect key="frame" x="28" y="13" width="237" height="75"/>
+                                        <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ndv-kY-aLf">
+                                            <rect key="frame" x="28" y="0.6666666666666643" width="237" height="100"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Rick Santorez" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="m2r-kg-VR9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="37.666666666666664"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="51"/>
                                                     <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="23"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28 years old" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Zl2-ci-hRS">
-                                                    <rect key="frame" x="0.0" y="37.666666666666657" width="119.33333333333334" height="37.333333333333343"/>
+                                                    <rect key="frame" x="0.0" y="51" width="119.33333333333334" height="49"/>
                                                     <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -63,7 +63,7 @@
                                 <constraints>
                                     <constraint firstItem="ndv-kY-aLf" firstAttribute="centerY" secondItem="H9p-gt-CmR" secondAttribute="centerY" id="Fa5-2j-eG3"/>
                                     <constraint firstItem="ndv-kY-aLf" firstAttribute="leading" secondItem="H9p-gt-CmR" secondAttribute="leading" constant="28" id="KLx-dK-LSn"/>
-                                    <constraint firstItem="ndv-kY-aLf" firstAttribute="height" secondItem="H9p-gt-CmR" secondAttribute="height" multiplier="0.75" id="r8Y-Sa-SfI"/>
+                                    <constraint firstItem="ndv-kY-aLf" firstAttribute="height" secondItem="H9p-gt-CmR" secondAttribute="height" id="xeI-3u-wMK"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="ageLabel" destination="Zl2-ci-hRS" id="CoP-dW-gZJ"/>
@@ -93,7 +93,7 @@
         <scene sceneID="5rz-le-E1h">
             <objects>
                 <tableViewController storyboardIdentifier="addPlayer" id="xES-kI-4oM" userLabel="Add A Player Table View Controller" customClass="AddAPlayerTableViewController" customModule="Footballers" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="czh-Si-tGG">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="czh-Si-tGG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -104,7 +104,7 @@
                                         <rect key="frame" x="0.0" y="55" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dRQ-wN-YhM" id="GkH-ae-HSm">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G3r-lW-ivQ">
