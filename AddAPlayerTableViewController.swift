@@ -27,6 +27,8 @@ class AddAPlayerTableViewController: UITableViewController, UITextFieldDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.hideKeyboard))
+        self.view.addGestureRecognizer(tapGestureRecognizer)
         
         self.selectedCountry = "France"
         self.countryPickerView.dataSource = self
@@ -78,6 +80,11 @@ class AddAPlayerTableViewController: UITableViewController, UITextFieldDelegate 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
+    }
+    
+    // MARK: - Helper functions
+    func hideKeyboard() {
+        self.view.endEditing(true)
     }
 
 }
